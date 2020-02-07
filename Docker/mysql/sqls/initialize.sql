@@ -30,3 +30,9 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO questions (user_id, body, created, modified)
+VALUES
+  (1, '普段PHPのフレームワークって何使ってますか？', now(), now()),
+  (1, 'PHPにあったらいいなと思う機能ってありますか？', now(), now()),
+  (1, 'みなさんはいつからPHPを書いてますか？', now(), now());
